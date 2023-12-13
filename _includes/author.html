@@ -1,0 +1,14 @@
+{% assign author = site.data.authors[include.author] %}
+<div class="card author mb-3">
+	<div class="card-body row flex-md-row">
+		<div class="author-avatar col-2">
+			<img src="{{ '/images/social/' | append: author.avatar | absolute_url }}" />
+		</div>
+		
+		<div class="col-8">
+			<h5 class="card-title">{{ author.name }}</h5>
+			<p class="card-text">{{ author.description | newline_to_br }}</p>
+		</div>
+	</div>
+</div>
+
